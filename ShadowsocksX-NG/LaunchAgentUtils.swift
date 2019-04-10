@@ -334,7 +334,7 @@ func writePrivoxyConfFile() -> Bool {
         let bundle = Bundle.main
         let examplePath = bundle.path(forResource: "privoxy.config.example", ofType: nil)
         var example = try String(contentsOfFile: examplePath!, encoding: .utf8)
-        example = example.replacingOccurrences(of: "{http}", with: defaults.string(forKey: "LocalHTTP.ListenAddress")! + ":" + String(defaults.integer(forKey: "LocalHTTP.ListenPort")))
+        example = example.replacingOccurrences(of: "{http}", with: (defaults.bool(forKey: "AllowOtherDeviceConnect") ? "0.0.0.0" : defaults.string(forKey: "LocalSocks5.ListenAddress")!) + ":" + String(defaults.integer(forKey: "LocalHTTP.ListenPort")))
         example = example.replacingOccurrences(of: "{socks5}", with: defaults.string(forKey: "LocalSocks5.ListenAddress")! + ":" + String(defaults.integer(forKey: "LocalSocks5.ListenPort")))
         let data = example.data(using: .utf8)
         

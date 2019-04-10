@@ -189,7 +189,7 @@ GCDWebServer *webServer =nil;
 }
 
 + (NSString*)getHttpPACUrl {
-    NSString * routerPath = @"/proxy.pac";
+    NSString * routerPath = @"/pac";
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 
@@ -202,18 +202,23 @@ GCDWebServer *webServer =nil;
 + (void)startPACServer:(NSString*) PACFilePath {
     [self stopPACServer];
     
-    NSString * routerPath = @"/proxy.pac";
+    NSString * routerPath = @"/pac";
     
-    NSData* originalPACData = [NSData dataWithContentsOfFile:PACFilePath];
-    
+    NSError* error = nil;
+    NSString* originalPacText = [NSString stringWithContentsOfFile:PACFilePath encoding: NSUTF8StringEncoding error:&error];
     webServer = [[GCDWebServer alloc] init];
     [webServer addHandlerForMethod:@"GET"
                               path:routerPath
                       requestClass:[GCDWebServerRequest class]
                       processBlock:^GCDWebServerResponse *(GCDWebServerRequest *request)
     {
-        GCDWebServerDataResponse* resp = [GCDWebServerDataResponse responseWithData:originalPACData
-                                                                        contentType:@"application/x-ns-proxy-autoconfig"];
+        NSURL* serverUrl = [request URL];
+        NSString* str = originalPacText;
+        if (serverUrl != nil) {
+            str = [originalPacText stringByReplacingOccurrencesOfString:@"__SOCKS5ADDR__" withString:serverUrl.host];
+        }
+        NSData* originalPACData = [str dataUsingEncoding:NSUTF8StringEncoding];
+        GCDWebServerDataResponse* resp = [GCDWebServerDataResponse responseWithData:originalPACData contentType:@"application/x-ns-proxy-autoconfig"];
         return resp;
     }
      ];
@@ -221,8 +226,9 @@ GCDWebServer *webServer =nil;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
     int port = (short)[defaults integerForKey:@"PacServer.ListenPort"];
+    bool bindToLocalHost = ![defaults boolForKey:@"AllowOtherDeviceConnect"];
     
-    [webServer startWithOptions:@{@"BindToLocalhost":@YES, @"Port":@(port)} error:nil];
+    [webServer startWithOptions:@{@"BindToLocalhost":@(bindToLocalHost), @"Port":@(port)} error:nil];
 }
 
 + (void)stopPACServer {

@@ -39,6 +39,7 @@ func diagnose() -> String {
     let keys = [
         "ShadowsocksOn",
         "ShadowsocksRunningMode",
+        "AllowOtherDeviceConnect",
         "LocalSocks5.ListenPort",
         "LocalSocks5.ListenAddress",
         "PacServer.ListenPort",

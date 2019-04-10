@@ -15,7 +15,7 @@
 "8Nu-gG-5rY.paletteLabel" = "Servers";
 
 /* Class = "NSTextFieldCell"; title = "Local Socks5 Listen Port:"; ObjectID = "8fk-fw-Tsx"; */
-"8fk-fw-Tsx.title" = "本地Socks5监听端口:";
+"8fk-fw-Tsx.title" = "本地Socks5监听端口（udp）:";
 
 /* Class = "NSTextFieldCell"; title = "Toggle Shadowsocks On/Off:"; ObjectID = "95S-ma-8Q7"; */
 "95S-ma-8Q7.title" = "开关 Shadowsocks:";
@@ -54,7 +54,7 @@
 "FSi-9j-QBe.title" = "Num of Kcptun connections:";
 
 /* Class = "NSTextFieldCell"; title = "Local PAC Server Listen Port:"; ObjectID = "IMQ-c4-gmc"; */
-"IMQ-c4-gmc.title" = "本地PAC服务器监听端口:";
+"IMQ-c4-gmc.title" = "本地PAC服务器监听端口（tcp）:";
 
 /* Class = "NSToolbarItem"; label = "General"; ObjectID = "Mp8-cF-kQ7"; */
 "Mp8-cF-kQ7.label" = "常规";
@@ -66,7 +66,7 @@
 "R3v-iN-zu8.title" = "启用 UDP 中继";
 
 /* Class = "NSTextFieldCell"; title = "HTTP Proxy Listen Port:"; ObjectID = "Ww9-j9-WYR"; */
-"Ww9-j9-WYR.title" = "HTTP代理监听端口:";
+"Ww9-j9-WYR.title" = "HTTP代理监听端口（tcp）:";
 
 /* Class = "NSButtonCell"; title = "Launch At Login"; ObjectID = "XJx-j4-bBr"; */
 "XJx-j4-bBr.title" = "开机启动";
@@ -78,7 +78,7 @@
 "v4F-L4-s8U.title" = "忽略这些主机与域的代理设置：";
 
 /* Class = "NSButtonCell"; title = "Enable Verbose Mode"; ObjectID = "cIS-Wb-Rzg"; */
-"cIS-Wb-Rzg.title" = "Enable Verbose Mode";
+"cIS-Wb-Rzg.title" = "启用 Verbose 模式";
 
 /* Class = "NSTabViewItem"; label = "Interfaces"; ObjectID = "eDR-CZ-P4p"; */
 "eDR-CZ-P4p.label" = "网络接口";
@@ -130,3 +130,6 @@
 
 /* Class = "NSTabViewItem"; label = "General"; ObjectID = "xbG-eW-Prj"; */
 "xbG-eW-Prj.label" = "常规";
+
+/* Class = "NSButtonCell"; label = "Allow Other Device Connect:"; ObjectID = "i4Q-ZG-F9F"; */
+"i4Q-ZG-F9F.title" = "允许其他设备连接";

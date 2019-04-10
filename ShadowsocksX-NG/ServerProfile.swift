@@ -180,7 +180,7 @@ class ServerProfile: NSObject, NSCopying {
         
         let defaults = UserDefaults.standard
         conf["local_port"] = NSNumber(value: UInt16(defaults.integer(forKey: "LocalSocks5.ListenPort")) as UInt16)
-        conf["local_address"] = defaults.string(forKey: "LocalSocks5.ListenAddress") as AnyObject?
+        conf["local_address"] = (defaults.bool(forKey: "AllowOtherDeviceConnect") ? "0.0.0.0" : defaults.string(forKey: "LocalSocks5.ListenAddress")) as AnyObject?
         conf["timeout"] = NSNumber(value: UInt32(defaults.integer(forKey: "LocalSocks5.Timeout")) as UInt32)
         conf["server"] = serverHost as AnyObject
         conf["server_port"] = NSNumber(value: serverPort as UInt16)

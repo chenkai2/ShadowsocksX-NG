@@ -91,6 +91,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         defaults.register(defaults: [
             "ShadowsocksOn": true,
             "ShadowsocksRunningMode": "auto",
+            "AllowOtherDeviceConnect": true,
             "LocalSocks5.ListenPort": NSNumber(value: 1086 as UInt16),
             "LocalSocks5.ListenAddress": "127.0.0.1",
             "PacServer.ListenPort":NSNumber(value: 1089 as UInt16),
@@ -100,7 +101,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
             "GFWListURL": "https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt",
             "AutoConfigureNetworkServices": NSNumber(value: true as Bool),
             "LocalHTTP.ListenAddress": "127.0.0.1",
-            "LocalHTTP.ListenPort": NSNumber(value: 1087 as UInt16),
+            "LocalHTTP.ListenPort": NSNumber(value: 1086 as UInt16),
             "LocalHTTPOn": true,
             "LocalHTTP.FollowGlobal": true,
             "ProxyExceptions": "127.0.0.1, localhost, 192.168.0.0/16, 10.0.0.0/8, FE80::/64, ::1, FD00::/8",
@@ -380,11 +381,11 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     }
     
     @IBAction func feedback(_ sender: NSMenuItem) {
-        NSWorkspace.shared.open(URL(string: "https://github.com/qiuyuzhou/ShadowsocksX-NG/issues")!)
+        NSWorkspace.shared.open(URL(string: "https://github.com/chenkai2/ShadowsocksX-NG/issues")!)
     }
     
     @IBAction func checkForUpdates(_ sender: NSMenuItem) {
-        NSWorkspace.shared.open(URL(string: "https://github.com/shadowsocks/ShadowsocksX-NG/releases")!)
+        NSWorkspace.shared.open(URL(string: "https://github.com/chenkai2/ShadowsocksX-NG/releases")!)
     }
     
     @IBAction func exportDiagnosis(_ sender: NSMenuItem) {
@@ -411,7 +412,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     }
     
     @IBAction func showHelp(_ sender: NSMenuItem) {
-        NSWorkspace.shared.open(URL(string: "https://github.com/shadowsocks/ShadowsocksX-NG/wiki")!)
+        NSWorkspace.shared.open(URL(string: "https://github.com/chenkai2/ShadowsocksX-NG/wiki")!)
     }
     
     @IBAction func showAbout(_ sender: NSMenuItem) {
