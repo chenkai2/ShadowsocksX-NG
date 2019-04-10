@@ -120,7 +120,7 @@
 "sQ9-bj-V0I.title" = "超时:";
 
 /* Class = "NSTextFieldCell"; title = "Which network interfaces  proxy setting would be controlled by ShadowsocksX-NG"; ObjectID = "t0I-6n-gnu"; */
-"t0I-6n-gnu.title" = "Which network interfaces  proxy setting would be controlled by ShadowsocksX-NG";
+"t0I-6n-gnu.title" = "哪个网络接口的代理设置交由 ShadowsocksX-NG 控制";
 
 /* Class = "NSTextFieldCell"; title = "GFW List URL:"; ObjectID = "v7a-wf-aEm"; */
 "v7a-wf-aEm.title" = "GFW List URL:";
