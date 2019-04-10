@@ -20,12 +20,12 @@
             <windowPositionMask key="initialPositionMask" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="609" y="533" width="480" height="326"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
-            <view key="contentView" wantsLayer="YES" misplaced="YES" id="se5-gp-TjO">
-                <rect key="frame" x="0.0" y="0.0" width="495" height="326"/>
+            <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="326"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <tabView type="noTabsNoBorder" translatesAutoresizingMaskIntoConstraints="NO" id="h22-uy-K1x">
-                        <rect key="frame" x="0.0" y="0.0" width="495" height="326"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="326"/>
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
                             <tabViewItem label="General" identifier="general" id="xbG-eW-Prj">
@@ -130,19 +130,19 @@
                             </tabViewItem>
                             <tabViewItem label="Advance" identifier="adv" id="ksf-9b-qoz" userLabel="Advanced">
                                 <view key="view" id="Pc1-f7-0zA">
-                                    <rect key="frame" x="0.0" y="0.0" width="495" height="326"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="480" height="326"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r8z-mM-M0X">
-                                            <rect key="frame" x="35" y="255" width="216" height="17"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Local Socks5 Listen Port(UDP):" id="8fk-fw-Tsx">
+                                            <rect key="frame" x="35" y="255" width="201" height="17"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Local Socks5 Listen Port:" id="8fk-fw-Tsx">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c8B-qf-UNK">
-                                            <rect key="frame" x="35" y="287" width="216" height="17"/>
+                                            <rect key="frame" x="35" y="287" width="201" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Local Socks5 Listen Address:" id="jkc-e3-4O0">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -150,7 +150,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cd8-PU-OwG">
-                                            <rect key="frame" x="257" y="284" width="218" height="22"/>
+                                            <rect key="frame" x="242" y="284" width="218" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="218" id="fM9-DB-eLc"/>
                                             </constraints>
@@ -168,7 +168,7 @@
                                             </connections>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MvY-R0-1FU">
-                                            <rect key="frame" x="35" y="191" width="216" height="17"/>
+                                            <rect key="frame" x="35" y="191" width="201" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Timeout:" id="sQ9-bj-V0I">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -176,7 +176,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zfl-10-Wdk">
-                                            <rect key="frame" x="257" y="188" width="60" height="22"/>
+                                            <rect key="frame" x="242" y="188" width="60" height="22"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" drawsBackground="YES" id="Ity-ir-Fyi">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -192,7 +192,7 @@
                                             </connections>
                                         </textField>
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="tGd-pe-2xJ">
-                                            <rect key="frame" x="255" y="164" width="222" height="18"/>
+                                            <rect key="frame" x="240" y="164" width="222" height="18"/>
                                             <buttonCell key="cell" type="check" title="Enable UDP Relay" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="R3v-iN-zu8">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
@@ -202,7 +202,7 @@
                                             </connections>
                                         </button>
                                         <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2rw-0u-LXJ">
-                                            <rect key="frame" x="257" y="252" width="60" height="22"/>
+                                            <rect key="frame" x="242" y="252" width="60" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="FWr-dm-ysF"/>
                                             </constraints>
@@ -221,7 +221,7 @@
                                             </connections>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a60-LH-adV">
-                                            <rect key="frame" x="323" y="191" width="99" height="17"/>
+                                            <rect key="frame" x="308" y="191" width="99" height="17"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="95" id="eAo-vP-NxC"/>
                                             </constraints>
@@ -232,7 +232,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="RcT-mn-xqK">
-                                            <rect key="frame" x="255" y="144" width="222" height="18"/>
+                                            <rect key="frame" x="240" y="144" width="222" height="18"/>
                                             <buttonCell key="cell" type="check" title="Enable Verbose Mode" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="cIS-Wb-Rzg">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
@@ -242,15 +242,15 @@
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RYj-h6-uAT">
-                                            <rect key="frame" x="35" y="223" width="216" height="17"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Local PAC Server Listen Port(TCP):" id="IMQ-c4-gmc">
+                                            <rect key="frame" x="35" y="223" width="201" height="17"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Local PAC Server Listen Port:" id="IMQ-c4-gmc">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KXG-O0-ake">
-                                            <rect key="frame" x="257" y="220" width="60" height="22"/>
+                                            <rect key="frame" x="242" y="220" width="60" height="22"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" drawsBackground="YES" id="T9o-Og-neF">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -266,7 +266,7 @@
                                             </connections>
                                         </textField>
                                         <button translatesAutoresizingMaskIntoConstraints="NO" id="8J0-Ob-6wR">
-                                            <rect key="frame" x="255" y="124" width="242" height="18"/>
+                                            <rect key="frame" x="240" y="124" width="242" height="18"/>
                                             <buttonCell key="cell" type="check" title="Allow Other Device Connect" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="i4Q-ZG-F9F">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
@@ -419,7 +419,7 @@
                                             <rect key="frame" x="20" y="111" width="440" height="119"/>
                                             <clipView key="contentView" id="9Wy-0J-wQ8">
                                                 <rect key="frame" x="1" y="1" width="438" height="117"/>
-                                                <autoresizingMask key="autoresizingMask"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" id="Vp3-dp-iqv">
                                                         <rect key="frame" x="0.0" y="0.0" width="438" height="117"/>

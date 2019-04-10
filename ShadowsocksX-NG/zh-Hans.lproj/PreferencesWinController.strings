@@ -15,7 +15,7 @@
 "8Nu-gG-5rY.paletteLabel" = "Servers";
 
 /* Class = "NSTextFieldCell"; title = "Local Socks5 Listen Port:"; ObjectID = "8fk-fw-Tsx"; */
-"8fk-fw-Tsx.title" = "本地Socks5监听端口（udp）:";
+"8fk-fw-Tsx.title" = "本地Socks5监听端口:";
 
 /* Class = "NSTextFieldCell"; title = "Toggle Shadowsocks On/Off:"; ObjectID = "95S-ma-8Q7"; */
 "95S-ma-8Q7.title" = "开关 Shadowsocks:";
@@ -54,7 +54,7 @@
 "FSi-9j-QBe.title" = "Num of Kcptun connections:";
 
 /* Class = "NSTextFieldCell"; title = "Local PAC Server Listen Port:"; ObjectID = "IMQ-c4-gmc"; */
-"IMQ-c4-gmc.title" = "本地PAC服务器监听端口（tcp）:";
+"IMQ-c4-gmc.title" = "本地PAC服务器监听端口:";
 
 /* Class = "NSToolbarItem"; label = "General"; ObjectID = "Mp8-cF-kQ7"; */
 "Mp8-cF-kQ7.label" = "常规";
@@ -66,7 +66,7 @@
 "R3v-iN-zu8.title" = "启用 UDP 中继";
 
 /* Class = "NSTextFieldCell"; title = "HTTP Proxy Listen Port:"; ObjectID = "Ww9-j9-WYR"; */
-"Ww9-j9-WYR.title" = "HTTP代理监听端口（tcp）:";
+"Ww9-j9-WYR.title" = "HTTP代理监听端口:";
 
 /* Class = "NSButtonCell"; title = "Launch At Login"; ObjectID = "XJx-j4-bBr"; */
 "XJx-j4-bBr.title" = "开机启动";
