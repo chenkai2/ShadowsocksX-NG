@@ -72,7 +72,7 @@ func GeneratePACFile() -> Bool {
         try! fileMgr.copyItem(atPath: src!, toPath: PACUserRuleFilePath)
     }
     
-    let socks5Address = UserDefaults.standard.string(forKey: "LocalSocks5.ListenAddress")!
+    //let socks5Address = UserDefaults.standard.string(forKey: "LocalSocks5.ListenAddress")!
     let socks5Port = UserDefaults.standard.integer(forKey: "LocalSocks5.ListenPort")
     
     do {
