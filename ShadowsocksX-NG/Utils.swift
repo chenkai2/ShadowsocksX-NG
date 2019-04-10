@@ -32,3 +32,13 @@ enum ProxyType {
 struct Globals {
     static var proxyType = ProxyType.pac
 }
+
+func isIpv6 (_ address: String) -> Bool {
+    var sin6 = sockaddr_in6()
+    return address.withCString({ cstring in inet_pton(AF_INET6, cstring, &sin6.sin6_addr) }) == 1;
+}
+
+func isIpv4 (_ address: String) -> Bool {
+    var sin = sockaddr_in()
+    return address.withCString({ cstring in inet_pton(AF_INET, cstring, &sin.sin_addr) }) == 1;
+}

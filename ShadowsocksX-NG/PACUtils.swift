@@ -120,15 +120,14 @@ func GeneratePACFile() -> Bool {
                 jsStr = jsStr!.replacingOccurrences(of: "__SOCKS5PORT__"
                     , with: "\(socks5Port)")
                 // Replace __SOCKS5ADDR__ palcholder in pac js
-                var sin6 = sockaddr_in6()
-                if socks5Address.withCString({ cstring in inet_pton(AF_INET6, cstring, &sin6.sin6_addr) }) == 1 {
+                if isIpv6(socks5Address) {
                     jsStr = jsStr!.replacingOccurrences(of: "__SOCKS5ADDR__"
                         , with: "[\(socks5Address)]")
                 } else {
                     jsStr = jsStr!.replacingOccurrences(of: "__SOCKS5ADDR__"
                         , with: socks5Address)
                 }
-                
+
                 // Write the pac js to file.
                 try jsStr!.data(using: String.Encoding.utf8)?
                     .write(to: URL(fileURLWithPath: PACFilePath), options: .atomic)
