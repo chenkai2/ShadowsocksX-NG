@@ -6,9 +6,9 @@
 #  Created by 邱宇舟 on 2018/9/21.
 #  Copyright © 2018年 qiuyuzhou. All rights reserved.
 
-# https://github.com/shadowsocks/kcptun/releases
+# https://github.com/chenkai2/kcptun/releases
 
-VERSION="v20170718"
+VERSION="v20190405"
 
 cd `dirname "${BASH_SOURCE[0]}"`
 
