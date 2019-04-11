@@ -11,7 +11,7 @@ import Foundation
 let SS_LOCAL_VERSION = "3.2.5"
 let KCPTUN_CLIENT_VERSION = "v20190405"
 let V2RAY_PLUGIN_VERSION = "master"
-let PRIVOXY_VERSION = "3.0.26.static"
+let PRIVOXY_VERSION = "3.0.28.stable"
 let SIMPLE_OBFS_VERSION = "0.0.5_1"
 let APP_SUPPORT_DIR = "/Library/Application Support/ShadowsocksX-NG/"
 let LAUNCH_AGENT_DIR = "/Library/LaunchAgents/"
