@@ -8,7 +8,7 @@
 
 import Foundation
 
-let SS_LOCAL_VERSION = "3.1.3"
+let SS_LOCAL_VERSION = "3.2.5"
 let KCPTUN_CLIENT_VERSION = "v20190405"
 let V2RAY_PLUGIN_VERSION = "master"
 let PRIVOXY_VERSION = "3.0.26.static"
@@ -115,7 +115,7 @@ func InstallSSLocal() {
     if !fileMgr.fileExists(atPath: appSupportDir + "ss-local-\(SS_LOCAL_VERSION)/ss-local")
        || !fileMgr.fileExists(atPath: appSupportDir + "ss-local-\(SS_LOCAL_VERSION)/libmbedcrypto.0.dylib") {
         let bundle = Bundle.main
-        let installerPath = bundle.path(forResource: "install_ss_local.sh", ofType: nil)
+        let installerPath = bundle.path(forResource: "ss-local-\(SS_LOCAL_VERSION)/install_ss_local.sh", ofType: nil)
         let task = Process.launchedProcess(launchPath: installerPath!, arguments: [""])
         task.waitUntilExit()
         if task.terminationStatus == 0 {
