@@ -24,8 +24,8 @@ Then I will rewrite the GUI code in Swift.
 
 ### Building
 
-- Xcode 10.0+
-- CocoaPods 1.5.3+
+- Xcode 10.2+
+- CocoaPods 1.7.0+
 
 ## Download
 
@@ -33,8 +33,8 @@ From [here](https://github.com/shadowsocks/ShadowsocksX-NG/releases/)
 
 ## Features
 
-- `ss-local` from shadowsocks-libev 3.2.0
-- Support SIP003 plugins. Embed `kcptun` and `simple-obfs`.
+- `ss-local` from shadowsocks-libev 3.2.5
+- Support SIP003 plugins. Embed `kcptun` ,  `simple-obfs` and `v2ray-plugin`.
 - Could update PAC by download GFW List from GitHub.
 - Share your server profiles by qrcode or url.
 - Import server profile urls from pasteboard.
