@@ -204,14 +204,14 @@ GCDWebServer *webServer =nil;
     
     NSString * routerPath = @"/pac";
     
-    NSError* error = nil;
-    NSString* originalPacText = [NSString stringWithContentsOfFile:PACFilePath encoding: NSUTF8StringEncoding error:&error];
     webServer = [[GCDWebServer alloc] init];
     [webServer addHandlerForMethod:@"GET"
                               path:routerPath
                       requestClass:[GCDWebServerRequest class]
                       processBlock:^GCDWebServerResponse *(GCDWebServerRequest *request)
     {
+        NSError* error = nil;
+        NSString* originalPacText = [NSString stringWithContentsOfFile:PACFilePath encoding: NSUTF8StringEncoding error:&error];
         NSURL* serverUrl = [request URL];
         NSString* str = originalPacText;
         if (serverUrl != nil) {
