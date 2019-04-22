@@ -165,7 +165,7 @@ class PreferencesWindowController: NSWindowController
     }
     
     @IBAction func openPluginHelp(_ sender: Any) {
-        let url = URL(string: "https://github.com/shadowsocks/ShadowsocksX-NG/wiki/SIP003-Plugin")
+        let url = URL(string: "https://github.com/chenkai2/ShadowsocksX-NG/wiki/SIP003-Plugin")
         NSWorkspace.shared.open(url!)
     }
     
